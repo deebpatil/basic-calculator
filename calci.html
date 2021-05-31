@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+	</head>
+	<body>
+		<h1>Basic calculator</h1>
+		<div class="calculator">
+		<form action="" name="Calci">
+			<input type="text" id="answer" name="answers">
+			<br><br>
+			<input class="btn" onclick="Calci.answers.value+='1'" type="button"  value="1">
+			<input class="btn" onclick="Calci.answers.value+='2'" type="button" value="2">
+			<input class="btn" onclick="Calci.answers.value+='3'" type="button" value="3">
+			
+			<br><br>
+			<input class="btn" onclick="Calci.answers.value+='4'" type="button" value="4">
+			<input class="btn" onclick="Calci.answers.value+='5'" type="button" value="5">
+			<input  class="btn" onclick="Calci.answers.value+='6'" type="button" value="6">
+            <br><br>
+			<input class="btn" onclick="Calci.answers.value+='7'" type="button" value="7">
+			<input class="btn" onclick="Calci.answers.value+='8'" type="button" value="8">
+			<input class="btn" onclick="Calci.answers.value+='9'" type="button" value="9">
+            <br><br>
+			<input class="btn" onclick="Calci.answers.value+='+'" type="button" value="+">
+			<input class="btn" onclick="Calci.answers.value+='-'" type="button" value="-">
+			<input class="btn" onclick="Calci.answers.value+='/'" type="button" value="/">
+            <br><br>
+			<input class="btn" onclick="Calci.answers.value+='0'" type="button" value="0">
+			<input class="btn" onclick="Calci.answers.value+='*'" type="button" value="*">
+			<input class="btn" onclick="Calci.answers.value =eval(Calci.answers.value)" type="button" value="=">
+            <br><br>
+			<input   class="calculator" id="clear" onclick="Calci.answers.value=''" type="button" value="Clear All">
+			
+		</form>
+	</div>
+	</body>
+</html>
